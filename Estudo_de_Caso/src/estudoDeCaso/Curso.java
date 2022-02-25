@@ -8,14 +8,18 @@ public class Curso {
 	private Integer id;
 	private String nome;
 	private AreaCurso area;
+	private Turma turma;
 	private Integer cargaHoraria;
-	private Date dataInicio;
-	private Date dataFim;
-	private Date horarioInicio;
-	private Date horarioFim;
 	public final Integer maxCargaHoraria = 300;
 	
 	//Métodos
+	public Turma getTurma() {
+		return turma;
+	}
+	public void setTurma(Turma turma) {
+		this.turma = turma;
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -45,33 +49,4 @@ public class Curso {
 			this.cargaHoraria = cargaHoraria;
 		}
 	}
-	
-	public Date getDataInicio() {
-		return dataInicio;
-	}
-	public void setDataInicio(Date dataInicio) {
-		this.dataInicio = dataInicio;
-	}
-	
-	public Date getDataFim() {
-		return dataFim;
-	}
-	public void setDataFim(Date dataFim) {
-		this.dataFim = dataFim;
-	}
-	
-	public Date getHorarioInicio() {
-		return horarioInicio;
-	}
-	public void setHorarioInicio(Date horarioInicio) {
-		this.horarioInicio = horarioInicio;
-	}
-	
-	public Date getHorarioFim() {
-		return horarioFim;
-	}
-	public void setHorarioFim(Date horarioFim) {
-		this.horarioFim = horarioFim;
-	}
-	
 }
